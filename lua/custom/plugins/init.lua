@@ -5,4 +5,17 @@
 
 ---@module 'lazy'
 ---@type LazySpec
-return {}
+return {
+  {
+    'MeanderingProgrammer/render-markdown.nvim',
+    dependencies = { 'nvim-treesitter/nvim-treesitter' },
+    ft = { 'markdown' },
+    opts = {},
+  },
+  {
+    'lukas-reineke/headlines.nvim',
+    dependencies = { 'nvim-treesitter/nvim-treesitter' },
+    ft = { 'markdown' },
+    opts = {},
+  },
+}
